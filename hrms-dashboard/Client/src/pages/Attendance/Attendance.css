@@ -1,0 +1,60 @@
+.table-container {
+  background: white;
+  margin: 20px;
+  border-radius: 20px;
+  overflow-x: auto;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 600px;
+}
+
+thead {
+  background: #6c2bd9;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    margin: 10px;
+  }
+
+  table {
+    font-size: 12px;
+    min-width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 11px;
+  }
+
+  .avatar {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,28 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100dvw;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* Overlay when sidebar is open */
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 999;
+  }
+}

@@ -1,0 +1,115 @@
+.leave-page {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.applied-leaves {
+  flex: 2;
+  background: #f8f4ff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.leave-calendar {
+  flex: 1;
+  background: #6200ea;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.header,
+.calendar-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #fffdfd;
+}
+
+td {
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-sm {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.position,
+.date {
+  font-size: 12px;
+  color: #aaa;
+}
+
+select {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.calendar-box {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.calendar-nav {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.leave-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.leave-form select,
+.leave-form input,
+.leave-form button {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.leave-form button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

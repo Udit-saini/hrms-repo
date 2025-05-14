@@ -1,0 +1,13 @@
+{
+  "name": "hrms-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "npm run dev --prefix Client",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
