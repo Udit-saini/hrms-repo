@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchEmployees = createAsyncThunk(
   "employees/fetchEmployees",
   async () => {
-    const response = await axios.get("http://hrms-repo-4wlc.vercel.app/api/candidates");
+    const response = await axios.get("http://localhost:5000/api/candidates");
     return response.data;
   }
 );
@@ -12,7 +12,7 @@ export const fetchEmployees = createAsyncThunk(
 export const deleteEmployee = createAsyncThunk(
   "employees/deleteEmployee",
   async (id) => {
-    await axios.delete(`http://hrms-repo-4wlc.vercel.app/api/candidates/${id}`);
+    await axios.delete(`http://localhost:5000/api/candidates/${id}`);
     return id;
   }
 );
@@ -21,7 +21,7 @@ export const editEmployee = createAsyncThunk(
   "employees/editEmployee",
   async ({ id, updatedData }) => {
     const response = await axios.put(
-      `http://hrms-repo-4wlc.vercel.app/api/candidates/${id}`,
+      `http://localhost:5000/api/candidates/${id}`,
       updatedData
     );
     return response.data;
